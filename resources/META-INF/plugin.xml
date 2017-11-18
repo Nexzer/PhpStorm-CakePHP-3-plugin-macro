@@ -1,0 +1,18 @@
+<idea-plugin>
+  <id>CakePHP3PluginMacro</id>
+  <name>CakePHP 3 Plugin macro</name>
+  <version>1.0</version>
+
+  <description>Create a macro that outputs the current plugin, or app if you're not in a plugin. Usefull for __d(PLUGIN,'text')</description>
+
+  <change-notes></change-notes>
+
+  <idea-version since-build="145.0"/>
+
+  <depends>com.jetbrains.php</depends>
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <liveTemplateMacro implementation="Nexzer.PluginMacro"/>
+  </extensions>
+</idea-plugin>
